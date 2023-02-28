@@ -36,19 +36,19 @@ const Testimonials = () => {
             <Card className='testimonialcard'>
               {/* <img src={test2} /> */}
               <p className="content">
-              “ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan, tempus at nunc, sit tempus.” 
+              “ Excellent customer service. The guy i talked with was very friendly, patient and helpful in helping us find what we were looking for” 
               </p>
               <div className='stars'>
                 <div className="img">
-                <img src={Ellipse} alt=""/>
+                {/* <img src={Ellipse} alt=""/> */}
                 </div>
                 <div className="descrription">
                   <h3 className="designatn">
-                    Designer Dayat 
+                  Deebhu Rajendra
                   </h3>
-                  <h6 className="designation">
-                  Business Manager, H&M
-                  </h6>
+                  {/* <h6 className="designation">
+                  Navigator
+                  </h6> */}
                 </div>
               
               
@@ -62,19 +62,19 @@ const Testimonials = () => {
             <Card className='testimonialcard'>
               {/* <img src={test2} /> */}
               <p className="content">
-              “ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan, tempus at nunc, sit tempus.” 
+              “ A fantastic organisation! Great cutomer support from beginning to end of the process. The team are really informed and go the extra mile at every stage.” 
               </p>
               <div className='stars'>
                 <div className="img">
-                <img src={Ellipse2} alt=""/>
+                {/* <img src={Ellipse2} alt=""/> */}
                 </div>
                 <div className="descrription">
-                  <h3 className="designatn">
-                    Designer Dayat 
+                  <h3 className="designatn spdestintn1">
+                  Akthar Muhammed
                   </h3>
-                  <h6 className="designation">
-                  Business Manager, H&M
-                  </h6>
+                  {/* <h6 className="designation">
+                  Entrepreneur
+                  </h6> */}
                 </div>
               
               
@@ -87,19 +87,19 @@ const Testimonials = () => {
             <Card className='testimonialcard'>
               {/* <img src={test2} /> */}
               <p className="content">
-              “ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan, tempus at nunc, sit tempus.” 
+              “ Fantastic company! Excellent customer service, efficient process. They made my import super easy.” 
               </p>
               <div className='stars'>
                 <div className="img">
-                <img src={Ellipse3} alt=""/>
+                {/* <img src={Ellipse3} alt=""/> */}
                 </div>
                 <div className="descrription">
-                  <h3 className="designatn">
-                    Designer Dayat 
+                  <h3 className="designatn spdestintn">
+                  Rosy Gabriel
                   </h3>
-                  <h6 className="designation">
-                  Business Manager, H&M
-                  </h6>
+                  {/* <h6 className="designation">
+                  Psychologist
+                  </h6> */}
                 </div>
               
               

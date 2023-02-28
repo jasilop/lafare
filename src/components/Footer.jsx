@@ -1,8 +1,18 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+
+import {BsWhatsapp} from "react-icons/bs";
+import {MdPhoneInTalk,MdEmail
+
+} from "react-icons/md";
+
 import logowhite from "./images/logowhite.png";
 import phone from "./images/phone.png";
 import Popup from "./Popup";
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+// import Col from 'react-bootstrap/Col';
+// import { Row } from "react-bootstrap";
 const Footer = () => {
   // const[popup, setPopup]=useState(false);
   const showPopup=()=>{
@@ -32,50 +42,58 @@ const Footer = () => {
               {/* <div className="logo">
             <img  src={logo} />
           </div> */}
+           
               <div className="  col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <Link className="sp" to="/">
                 <img className="logowhite" src={logowhite} alt=""/>
+                </Link>
               </div>
+              
               <div className=" sectionfooter col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                 {/* <!-- Content --> */}
                 <h6 className="same text-uppercase fw-bold mb-4">Quik Links</h6>
                 <p>
-                  <a href="#!" className="text-reset enq-btn">
+                <HashLink className="hash" to="/#Contact">
                     Make an enquiry
-                  </a>
+                    </HashLink>
                 </p>
                 <p>
-                  <a href="#!" className="text-reset">
+                <HashLink className="hash" to="/#Contact">
+                  {/* <a href="#!" className="text-reset"> */}
                     Contact us
-                  </a>
+                  {/* </a> */}
+                  </HashLink>
                 </p>
               </div>
               {/* <!-- Grid column --> */}
 
               {/* <!-- Grid column --> */}
-              <div className=" sectionfooter col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                {/* <!-- Links --> */}
+              {/* <div className=" sectionfooter col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
                 <h6 className="  same text-uppercase fw-bold mb-4">About</h6>
                 <p>
-                  <a href="#!" className="text-reset">
+                
+                <Link className="hash" to="/about">
                     About us
-                  </a>
+                  </Link>
+                  
                 </p>
                 <p>
-                  <a href="#!" className="text-reset">
+                <HashLink className="hash" to="/Servicessingle#why">
                     Why choose us{" "}
-                  </a>
+                </HashLink>
                 </p>
                 <p>
-                  <a href="#!" className="text-reset">
+                <HashLink className="hash" to="/about#missionsuc">
                     Mission
-                  </a>
+                    </HashLink>
                 </p>
                 <p>
-                  <a href="#!" className="text-reset">
-                    Vission
-                  </a>
+                <HashLink className="hash" to="/about#vissionsuc">
+                    Vission  
+                    </HashLink>
                 </p>
-              </div>
+              </div> */}
               {/* <!-- Grid column --> */}
 
               {/* <!-- Grid column --> */}
@@ -101,7 +119,7 @@ const Footer = () => {
               {/* <!-- Grid column --> */}
               <div className="sectionfooter col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 contact-below">
                 {/* <!-- Links --> */}
-                <h6 className=" same text-uppercase fw-bold mb-4">Contact Us</h6>
+                {/* <h6 className=" same text-uppercase fw-bold mb-4">INDIA</h6> */}
                 {/* <p>
                   <a href="#!" className="text-reset">
                     <TiPhoneOutline />
@@ -113,9 +131,48 @@ const Footer = () => {
                     <TiMail />
                   </a>
                 </p> */}
-                <p>+91 9400 000 000</p>
-                <p>info@lafareinternational.com</p>
+                   {/* <p>68/1520, 2nd Floor, CM Mathew Brothers Arcade,
+Near Westway hotel, Chakkorathukulam
+Calicut – 673006</p> */}
+                     {/* <p><BsWhatsapp/> +91 9847028242</p>
+                    <p> <MdPhoneInTalk/>+91 96568 88796</p>
+                    <p> <MdPhoneInTalk/>+91 97460 50774</p>
+                    <p>info@lafareinternational.com</p> */}
+               
               </div>
+              <div className="sectionfooter col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 contact-below">
+                {/* <!-- Links --> */}
+                {/* <h6 className=" same text-uppercase fw-bold mb-4">UNITED KINGDOM</h6> */}
+                {/* <p>
+                  <a href="#!" className="text-reset">
+                    <TiPhoneOutline />
+                    +91 9400 000 000
+                  </a>
+                </p>
+                <p>
+                  <a href="#!" className="text-reset">
+                    <TiMail />
+                  </a>
+                </p> */}
+                    {/* <p>97 , West street 
+Harrow
+HA13EL
+London
+United Kingdom </p> */}
+               
+                    {/* <p> <MdPhoneInTalk/>+44 (0)7405 412543</p> */}
+                    {/* <p> <MdPhoneInTalk/>+44 (0)7466 479963</p> */}
+               
+                   
+                    {/* <p>info@lafareinternational.com</p> */}
+               
+              </div>
+
+
+
+
+
+
 
               <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4 footerend">
                 {/* <!-- Links --> */}
@@ -166,8 +223,8 @@ const Footer = () => {
         {/* <!-- Section: Social media --> */}
         <section className="d-flex justify-content-center justify-content-lg p-4 border-bottom">
           {/* <!-- Left --> */}
-          <div className="me-5 d-none d-lg-block">
-            <span className="footerspan">
+          <div className="  d-lg-block">
+            <span className="footerspan ftrlow">
               Lafare international, 2022 All rights reserved{" "}
             </span>
           </div>

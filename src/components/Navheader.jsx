@@ -48,12 +48,14 @@ const Navheader = (props) => {
                 <Nav.Link href="#Services">Services</Nav.Link>
                 <Nav.Link href="#Gallery"> Products</Nav.Link>
               </Nav> */}
-              <Link to="/"> Home </Link>
-              <Link to="/about"> About </Link>
-              <Link to="/services"> Services </Link>
-              <Link className="hh" to="/products"> Products </Link>
-              <div className='enquire_button'>
-                <Button onClick={() => showContact()}>Make an enquiery </Button>
+              <Link className="nnav" to="/"> Home </Link>
+              <Link className="nnav" to="/about"> About </Link>
+              <Link className="nnav" to="/Servicessingle"> Services </Link>
+              {/* <Link className="hh" to="/products"> Products </Link> */}
+              <Link className="hh nnav" to="/services"> Products </Link>
+              {/* <Link className="hh nnav" to="/services"> Contact Us </Link> */}
+              <div className='enquire_button middlebtn spbtn'>
+                <Button onClick={() => showContact()}>Make an enquiry </Button>
                 </div>
                 {/* <Button > Make an enquiery</Button> */}
               

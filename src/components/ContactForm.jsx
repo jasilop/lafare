@@ -12,14 +12,14 @@ const ContactForm = () => {
         }
   const successAlert=() =>{
     Swal.fire({
-        title:'Good job!',
-        text:'You clicked the button.',
+        title:'Thank You!',
+        text:'We will Be in Touch Soon..',
         icon:'success'
     }).then(()=>{
         closeContact()
     })
   }
-    const products = ["greentea","juice","pudding"]
+    const products = ["Chicken curry paste","Pepper chicken paste","Beaf roast paste","Fish curry paste"]
     const [product, setProduct]=useState('');
     const [name, setName]=useState('');
     const [phone, setPhone]=useState('');
@@ -50,8 +50,10 @@ const ContactForm = () => {
 
   return (
     <div className='right-section' >
-     <form id="contact_form"  onSubmit={handleSubmit}>
-                 <div class="input-group">
+     <form id="contact_form"   onSubmit={handleSubmit} >
+        
+
+                 {/* <div className="input-group">
                     <label for="Data_sets">Product</label>
                     <select id="Data_sets" name="product" onChange={(e)=>setProduct(e.target.value)} value={product} >
                         {products.map((item,key) => (
@@ -60,18 +62,18 @@ const ContactForm = () => {
                       </select>
                     
                       
-                </div>
-                <div class="input-group">
-                    <label for="fname"> Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name"
+                </div> */}
+                <div className="input-group">
+                    <label htmlFor="fname"> Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name" 
                     // value={name}
                     // onChange={handleChange}
                     onChange={(e)=>setName(e.target.value)} value={name}
                     />
                 </div> 
 
-                <div class="input-group">
-                    <label for="fname"> Phone</label>
+                <div className="input-group">
+                    <label htmlFor="fname"> Phone</label>
                     <input type="tel" id="fname" name="phone" placeholder="Mobile Number" 
                     // value={phone}
                     // onChange={handleChange}
@@ -80,9 +82,9 @@ const ContactForm = () => {
   
                 </div>
 
-                <div class="input-group">
-                    <label for="fname"> Email</label>
-                    <input type="email" id="fname" name="email" placeholder="Your Mail Id"
+                <div className="input-group">
+                    <label htmlFor="fname"> Email</label>
+                    <input type="text" id="fname" name="email" placeholder="Your Mail Id"
                     // value={email}
                     // onChange={handleChange}
                     onChange={(e)=>setEmail(e.target.value)} value={email}
@@ -91,10 +93,10 @@ const ContactForm = () => {
                 </div>
                 
                 
-                <div class="input-group">
+                <div className="input-group">
 
-                    <label for="fname"> Message</label>
-                    <input type="text" id="fname" name="text" placeholder="Enter your message"
+                    <label  htmlFor="fname"> Message</label>
+                    <textarea type="text" id="fname" name="text" placeholder="Enter your message"
                     // value={message}
                     // onChange={handleChange}
                     onChange={(e)=>setMessage(e.target.value)} value={message}
@@ -106,13 +108,13 @@ const ContactForm = () => {
                 
                 
                 
-                <div class="submit-section enquire_button">
+                <div className="submit-section enquire_button">
                     {/* <input type="submit" value="Submit"/> */}
                     
                      <button className='buttonsubmit' onClick={successAlert} >submit</button> 
                      {/* <button className='buttonsubmit' onClick={() => hideContact()} >submit</button>  */}
-                     {/* <!-- <input type="submit" class="submit-button"/> --> */}
-                    
+                     {/* <!-- <input type="submit" className="submit-button"/> --> */}
+                     {/* onClick={successAlert} */}
                 </div>
 
 

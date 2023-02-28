@@ -1,9 +1,9 @@
 import React,  { useEffect } from 'react'
-import image3 from './images/image3.png'
+import image3 from './images/About Us.png'
 import { Row, Col, Container, Button } from 'react-bootstrap';
 // import "./MediaQrs.css"
 import { FaAngleRight } from "react-icons/fa"
-
+import { Link } from 'react-router-dom';
 
 
 
@@ -16,7 +16,7 @@ const About = () => {
    
 
     <section id='About'>
-      <Container >
+      <Container className="Aboutcontainer">
         <Row className="align-items-center abt-con" >
           <Col className="left mb-5" md="6">
             <h3 className="section_sub_title">
@@ -30,10 +30,12 @@ const About = () => {
             </h2>
             <p className="content">
             A team of four young graduates from different backgrounds came up with an idea of serving the world with Traditional Indian Culture and Taste.
+            Also as an emerging country, knowing India’s potential we took a step ahead and promised to source best quality products from India to other business across the Globe. This also involved us in manufacturing the products based on requirements of different businesses and to help in import and export of goods.
            
             </p>
-            <div className=''>
-          <span className='learn_more'><a href='#'>Read more... <FaAngleRight /></a></span>
+            <div className='read-more'>
+          <span className='learn_more'><Link to="/about">Read more... <FaAngleRight /></Link></span>
+           
         </div>
           </Col>
           <Col className="right md-6 image-3">

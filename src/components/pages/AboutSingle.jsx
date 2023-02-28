@@ -3,7 +3,7 @@ import React from 'react'
 import image3 from '../images/image3.png';
 import image333 from '../images/image333.png'
 import image33 from '../images/image33.png'
-import ba from '../images/ba.png';
+import ba from '../images/handshake-4011419_1920.jpg';
 import { Row, Col, Container, Button, Navbar } from 'react-bootstrap';
 import Services from '../Services';
 // import Navheader from '../Navheader';
@@ -19,7 +19,7 @@ const AboutSingle = () => {
       
       
       <div className="first" style={{backgroundImage: `url(${ba})`}}  >
-          <h1 className="firsth1">Where Culture and Taste Fly Overseas</h1>
+          {/* <h1 className="firsth1">Where Culture and Taste Fly Overseas</h1> */}
       </div>
 
 
@@ -40,14 +40,14 @@ const AboutSingle = () => {
             <div className=''>
         </div>
           </Col>
-          <Col className="  right px-5" md="6">
-            <img className="image33 " src={image3} />
+          <Col className=" specialcolumn right px-5" md="6">
+            <img className="image33 specialimage" src={image3} />
             {/* {image} */}
           </Col>
         </Row>
-        <Row className="align-items-center aboutsinglepage2ndimage" >
-          <Col className="  right px-5" md="6" >
-            <img className="image33 " src={image33} />
+        <Row id="missionsuc" className="align-items-center aboutsinglepage2ndimage" >
+          <Col className=" specialcolumn right px-5" md="6" >
+            <img className="image33 specialimage " src={image33} />
             {/* {image} */}
           </Col>
           <Col className="left mb-5" md="6">
@@ -63,7 +63,7 @@ const AboutSingle = () => {
           </Col>
           
         </Row>
-        <Row className="align-items-center"  >
+        <Row id="vissionsuc " className="align-items-center"  >
           <Col className="left mb-5" md="6">
             <h3 className="section_sub_title">
             Vision
@@ -75,13 +75,13 @@ const AboutSingle = () => {
             <div className=''>
         </div>
           </Col>
-          <Col className="  right px-5" md="6">
+          <Col className=" specialcolumn  right px-5" md="6">
             <img className="image33 " src={image333} />
             {/* {image} */}
           </Col>
         </Row>
       </Container>
-      <Services style={{backgroundImage:'none'}}/>
+      {/* <Services style={{backgroundImage:'none'}}/> */}
     </section>
    
     <Footer/>

@@ -21,7 +21,7 @@ const Contact = () => {
                 <Row>
                     <Col className='left'>
                     <h3 className="section_title">
-                    Want to join <br/>with Us?
+                    Want to join with Us?
                      </h3>
                      <div className="joint">
                         <div className='item' style={{}}>
@@ -35,7 +35,7 @@ const Contact = () => {
                         </div>
                     </div>
                     </Col>
-                    <Col className='right'>
+                    <Col className='rightcontact'>
                         <ContactForm/>
                     </Col>
                 </Row>
