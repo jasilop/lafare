@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 // import { useDispatch, useSelector } from 'react-redux';
 // import { DomainApi } from '../Domain/useApi';
 import logo1 from  './images/logo1.png'
-import logo2 from  './images/logo2.png'
+import logo2 from  './images/LA FARE Logo White.png'
 import ContactForm from './ContactForm';
 
 const Navheader = (props) => {
@@ -52,7 +52,7 @@ const Navheader = (props) => {
               <Link className="nnav" to="/about"> About </Link>
               <Link className="nnav" to="/Servicessingle"> Services </Link>
               {/* <Link className="hh" to="/products"> Products </Link> */}
-              <Link className="hh nnav" to="/services"> Products </Link>
+              {/* <Link className="hh nnav" to="/services"> Products </Link> */}
               {/* <Link className="hh nnav" to="/services"> Contact Us </Link> */}
               <div className='enquire_button middlebtn spbtn'>
                 <Button onClick={() => showContact()}>Make an enquiry </Button>

@@ -25,12 +25,12 @@ const About = () => {
               
             </h3>
             <h2 className="section_title">
-            Where Culture and Taste Fly Overseas
+            Connecting the world of Business
               
             </h2>
             <p className="content">
-            A team of four young graduates from different backgrounds came up with an idea of serving the world with Traditional Indian Culture and Taste.
-            Also as an emerging country, knowing India’s potential we took a step ahead and promised to source best quality products from India to other business across the Globe. This also involved us in manufacturing the products based on requirements of different businesses and to help in import and export of goods.
+            At LA-FARE INTERNATIONAL, we are dedicated to helping businesses succeed by providing high-quality sourcing and trading services. With over a decade of experience in the industry, we have developed an extensive network of suppliers and a deep understanding of global markets. We specialize in sourcing and procuring high-quality products from around the world, providing end-to-end logistics and supply chain management services, and ensuring that all products meet the highest standards of quality and safety.
+
            
             </p>
             <div className='read-more'>

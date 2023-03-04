@@ -30,25 +30,13 @@ const Services = () => {
           </Col>
         </Row> */}
         <Row className="cardservicelandingpage cards my-4" >
-          <Col className="colq">
-          {/* width: '16rem',backgroundColor:'#255E8A',height:'14rem' */}
-            <Card id="okok" style={{ backgroundColor:'#255E8A'  }}>
-            <Card.Img   className='cardimage'  src={image4}   />
-            <Card.Body>
-                <Card.Title className='cardtitleser'>Import & Export</Card.Title>
-                <Card.Text className='cardtext'>
-                We Import and Export food products globally.
-                </Card.Text>
-            </Card.Body>
-            </Card>
-          </Col>
-          <Col>
+        <Col>
             <Card id="okok" style={{ backgroundColor:'#255E8A'}}>
             <Card.Img  className='cardimage'  src={image5}   />
             <Card.Body>
                 <Card.Title className='cardtitleser'>Sourcing</Card.Title>
                 <Card.Text className='cardtext'>
-                We Source food products directly from the farmers, local vendors and manufacturers.
+                We specialize in sourcing high-quality products from around the world to help our clients succeed
                 </Card.Text>
             </Card.Body>
             </Card>
@@ -57,16 +45,31 @@ const Services = () => {
             <Card id="okok" style={{backgroundColor:'#255E8A' }}>
             <Card.Img  className='cardimage'  src={image6}   />
             <Card.Body>
-                <Card.Title className='cardtitleser'>Distribution</Card.Title>
+                <Card.Title className='cardtitleser'>Manufacturing</Card.Title>
                 <Card.Text className='cardtext'>
-                We distribute the food products across the world.
+                We offer end-to-end manufacturing solutions to bring your ideas to life
+
                 </Card.Text>
             </Card.Body>
             </Card>
           </Col>
+          <Col className="colq">
+          {/* width: '16rem',backgroundColor:'#255E8A',height:'14rem' */}
+            <Card id="okok" style={{ backgroundColor:'#255E8A'  }}>
+            <Card.Img   className='cardimage'  src={image4}   />
+            <Card.Body>
+                <Card.Title className='cardtitleser'>Import & Export</Card.Title>
+                <Card.Text className='cardtext'>
+                We provide expert logistics solutions to deliver your products on time and on budget
+                </Card.Text>
+            </Card.Body>
+            </Card>
+          </Col>
+
+
        
         </Row>
-        <Row style={{ marginTop:'5%', marginBottom:'5%'}} >
+        <Row style={{ marginTop:'10%', marginBottom:'5%'}} >
           <Col >
             <h3 className="section_sub_title specialtitle" >
             Why choose us

@@ -6,7 +6,7 @@ import {MdPhoneInTalk,MdEmail
 
 } from "react-icons/md";
 
-import logowhite from "./images/logowhite.png";
+import logowhite from "./images/LA FARE Logo White.png";
 import phone from "./images/phone.png";
 import Popup from "./Popup";
 import { Link } from 'react-router-dom';

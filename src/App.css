@@ -27,7 +27,7 @@ body {
 }
 
 .section_sub_title {
-  font-size: 24px;
+  font-size: 40px;
   font-weight: 700;
   color: var(--activepro-color);
 
@@ -44,11 +44,12 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: var(--dark-color);
+  text-align: justify;
   /* text-indent: 30px; */
 }
 
 .learn_more {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   display: block;
   text-align: center;
 }
@@ -77,6 +78,7 @@ body {
   align-items: center;
   display:block;
   margin-left: -50px;
+  width: 100px;
 }
 #NavHeader .logo1 {
   display:none;
@@ -121,7 +123,7 @@ body {
   width: 100%;
 }
 #NavHeader .modal{
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.315);
   position: fixed;
   top: 0;
   left: 0;
@@ -147,8 +149,8 @@ margin-bottom: 20%;
 }
 /* aboutsingle */
 .image33{
-  height: 337px;
-  width:500px;
+  /* height: 382px; */
+  width:573px;
   }
   .topsingle{
     margin-top:4%;
@@ -190,14 +192,17 @@ background-color: #0000008f;
   align-items: flex-start;
 }
 .back .text-title h1 {
-  font-size: 120px;
+  font-size: 110px;
   letter-spacing: 2px;
   line-height: 110px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .back .text-title p {
   font-size: 22px;
-  letter-spacing: 2px;
-  margin-top: 10px;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 /* Services */
 
@@ -216,7 +221,7 @@ background-color: #0000008f;
 } */
 .specialtitle{
   text-align: center;
-  font-size: 45px;
+  font-size: 40px;
 }
 .cardimage{
   height:80px;
@@ -236,6 +241,7 @@ background-color: #0000008f;
 .cardtitleser{
   color: var(--light-color);
   text-align: center;
+  font-size: 100px;
 }
 .cardtext{
   color: var(--light-color);
@@ -380,13 +386,14 @@ textarea{
 }
 .buttonsubmit{
   margin-top: 50px;
+  margin-bottom: 50px;
   cursor: pointer;
   font-size: 14px;
   font-weight: 700;
   border: none;
   background-color:  #FAA51A;
   color: #ffff;
-  padding: 3% 8%;
+  padding: 3% 10%;
   border-radius: 4px;
   text-align: center;
   margin-left: 35%
@@ -403,7 +410,7 @@ textarea{
 }
 .right-section{
   width:500px;
-  height:600px;
+  height:625px;
   background:#FFFF;
   border-radius:4%;
    box-shadow: 5px 5px 18px #29252594;
@@ -412,6 +419,7 @@ textarea{
 }
 .submit-section{
   margin:auto;
+  padding-bottom: 20px;
 }
 /* .right-section{
   /* border-radius: 5px; */
@@ -478,8 +486,10 @@ input[type=text],[type=email],[type=tel], select, textarea {
 
 
 .logowhite{
-  margin-top: 25%;
+  /* margin-top: 25%; */
   cursor: pointer;
+  width: 170px;
+  margin-left: -50px;
 }
 .same{
   /* margin-top: 15%; */
@@ -537,6 +547,10 @@ padding: 30px;
     width: 60%;
     height: 60%;
   }
+
+#Services{
+margin-top: 100px;
+}
 /* about single */
 #AboutSingle #Services .container{
   background: none !important;
@@ -560,6 +574,10 @@ padding: 30px;
   background-color: rgb(37, 94, 138);
   position: absolute;
   top: 0;
+}
+.spacer-2{
+  height: 100px;
+  width: 100%;
 }
 
 

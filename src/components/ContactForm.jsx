@@ -50,6 +50,7 @@ const ContactForm = () => {
 
   return (
     <div className='right-section' >
+        
      <form id="contact_form"   onSubmit={handleSubmit} >
         
 
