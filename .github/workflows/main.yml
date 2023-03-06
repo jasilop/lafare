@@ -16,15 +16,8 @@ jobs:
         run: npm run build
         env:
           CI: false
-      # Share artifact inside workflow
-      - name: Share artifact inside workflow
-        uses: actions/upload-artifact@v1
-        with:
-          name: react-github-actions-build
-          path: build
-
-  deploy:
-    name: deploy
+  COPY:
+    name: copy files to server
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
@@ -37,5 +30,4 @@ jobs:
         ##passphrase: ${{ secrets.PASSPHRASE }}
         port: ${{ secrets.PORT }}
         source: "*"
-        target: "/home/nodepath/lafare"
-        
+        target: "/home/nodepath/lafare" 
