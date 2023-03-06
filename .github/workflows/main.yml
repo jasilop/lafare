@@ -16,7 +16,8 @@ jobs:
         run: npm run build
         env:
           CI: false
-  COPY:
+  copy:
+    needs: [build]
     name: copy files to server
     runs-on: ubuntu-latest
     steps:
@@ -31,3 +32,20 @@ jobs:
         port: ${{ secrets.PORT }}
         source: "*"
         target: "/home/nodepath/lafare" 
+        
+  deploy:
+    needs: [copy]
+    runs-on: ubuntu-latest
+    steps:
+    - name: SSH and deploy node app
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.SSH2 }}
+        port: ${{ secrets.PORT }}
+        script: |
+          cd /home/nodepath/lafare
+          sudo npm install 
+          sudo npm run build
+    
